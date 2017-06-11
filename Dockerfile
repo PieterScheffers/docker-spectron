@@ -26,6 +26,7 @@ RUN apt-get update \
 
 ENV ELECTRON_ENABLE_STACK_DUMPING=true
 ENV ELECTRON_ENABLE_LOGGING=true
+ENV DISPLAY=:99
 
 ADD docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod +x /docker-entrypoint.sh

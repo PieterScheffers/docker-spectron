@@ -21,7 +21,8 @@ RUN apt-get update \
     libxss1 \
     libnss3 \
     libasound2 \
-    libgconf-2-4
+    libgconf-2-4 \
+  && rm -rf /var/lib/apt/lists/*
 
 ENV ELECTRON_ENABLE_STACK_DUMPING=true
 ENV ELECTRON_ENABLE_LOGGING=true
